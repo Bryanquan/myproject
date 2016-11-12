@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="11springmvc_interceptor"
+  id="myeclipse.1477122873546"
+  context-root="/interceptor"
+  j2ee-spec="5.0"
+  archive="11springmvc_interceptor.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

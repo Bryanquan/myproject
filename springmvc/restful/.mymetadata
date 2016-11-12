@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="07springmvc_restful"
+  id="myeclipse.1477122873546"
+  context-root="/restful"
+  j2ee-spec="5.0"
+  archive="07springmvc_restful.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

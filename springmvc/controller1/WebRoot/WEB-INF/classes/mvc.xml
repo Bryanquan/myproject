@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!-- Bean头部 -->  
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xmlns:mvc="http://www.springframework.org/schema/mvc"  
+    xmlns:context="http://www.springframework.org/schema/context"  
+    xmlns:util="http://www.springframework.org/schema/util"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd  
+            http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd  
+            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd"> 
+            <!--配置渲染器-->
+            <bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+              <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+              <property name="prefix" value="/WEB-INF/jsp/"/>
+              <property name="suffix" value=".jsp"/>
+           </bean>
+           <!--配置请求和处理-->
+           <!--请求为hello*.do都将被匹配-->
+          <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>  
+          <bean id="helloController" class="cn.sxt.controller.HelloController"/>
+</beans>
