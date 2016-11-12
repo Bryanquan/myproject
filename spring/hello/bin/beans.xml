@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+<!-- bean就是java对象由spring来创建和处理 -->
+ <bean id="h1" name="hello" class="cn.sxt.bean.Hello">
+ <!--id是bean的标识符，要唯一，如果没有配置标识符，则name为默认标识符
+    如果配置id，那么name是别名，name可以设置多个别名，，分隔符可以空格，逗号，分号
+    class是bean的全限定名=包名+类名，如果不配置id和name，
+          那么可以根据 ApplicationContext.getBean(class)
+    来获取对象
+ -->
+   <property name="name" value="张三"/>
+ </bean>
+</beans>
