@@ -3,7 +3,7 @@ package cn.sxt.bean;
 public class Hello 
 {
     private String name;
-     //set方法用于注解
+     //set鏂规硶鐢ㄤ簬娉ㄨВ
 	public void setName(String name) {
 		this.name = name;
 	}
