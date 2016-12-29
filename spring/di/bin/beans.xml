@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<!--bean注入-->
+<bean id="addr" class="cn.sxt.vo.Address">
+  <property name="addr" value="长沙">
+  </property>
+</bean>
+ <bean id="student"  class="cn.sxt.vo.Student">
+   <property name="name" value="张三丰"/>
+   <property name="addr" ref="addr"/>
+   <property name="books">
+      <list>
+   		<value>红楼梦</value>
+   		<value>西游记</value>
+   		<value>水浒传</value>
+   	  </list>
+  </property>
+ </bean>
+</beans>
