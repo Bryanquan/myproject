@@ -1,0 +1,13 @@
+<FindBugsFilter>
+	<Match>
+		<Package name="~^net\.sinofool\.alipay\.thirdparty\..*" />
+	</Match>
+	<Match>
+		<Package name="net.sinofool.alipay.dict" />
+	</Match>
+	<Match>
+		<Class name="net.sinofool.alipay.AlipayResponseData" />
+		<Method name="getBoolean" />
+		<Bug pattern="NP_BOOLEAN_RETURN_NULL" />
+	</Match>
+</FindBugsFilter>
