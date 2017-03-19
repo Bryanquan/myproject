@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+<!-- bean就是java对象由spring来创建和处理 -->
+<bean id="userFactory" class="cn.sxt.factory.UserDynamicFactory"/>
+<bean id="user" name="u2,u3 u4" factory-bean="userFactory" class="cn.sxt.factory.UserFactory" factory-method="newInstance">
+  <constructor-arg index="0" value="王五"/> 
+</bean>
+<!--alias为别名属性-->
+<alias name="user" alias="user1"/>
+</beans>
